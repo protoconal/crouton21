@@ -1,7 +1,7 @@
 <html>
 <title> Crouton </title>
 <header>
-    <link rel="icon" type="image/png" href="crouton.png">
+    <link rel="icon" type="image/webp" href="crouton.webp">
 </header>
 <body bgcolor="white" text="black">
 <div class="crouton"></div>
@@ -13,6 +13,12 @@
   background-image: url("crouton.png");
   background-repeat: repeat;
   background-size: 33px 31px;
+}
+    
+@supports (background-image: url('crouton.webp')) {
+  .crouton {
+    background-image: url('crouton.webp');
+  }
 }
 </style>
 
